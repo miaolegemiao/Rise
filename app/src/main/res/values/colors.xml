@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <!-- 底部按钮选中 -->
+    <color name="menu_check">#26c9dc</color>
+    <!-- 底部按钮默认 -->
+    <color name="menu_default">#000000</color>
+    <!-- 标题色 -->
+    <color name="title_bg">#013e5b</color>
+    <!-- 背景色 -->
+    <color name="all_bg">#f0f0f0</color>
+    <!-- 背景色 -->
+    <color name="index_bg">#f0f0f0</color>
+    <!-- 按钮色 -->
+    <color name="btn_color">#147fb7</color>
+    <color name="white">#fff</color>
+    <color name="black">#000</color>
+    <color name="alertdialog_line">#c6c6c6</color>
+    <color name="common_red">#EB0000</color>
+    <color name="common_line_two">#dcdcdc</color>
+    <!-- 标题文字色值 -->
+    <color name="text_color1">#333333</color>
+    <!-- 文字内容色值 -->
+    <color name="text_color2">#666666</color>
+    <color name="text_color3">#999999</color>
+    <color name="text_color4">#bbbbbb</color>
+    <color name="title_color">#ebebeb</color>
+</resources>

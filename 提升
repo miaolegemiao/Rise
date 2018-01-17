@@ -1,0 +1,51 @@
+1、轮播器效果
+    private ImageView imageView;
+    private Handler handler = new Handler();
+    private int image[] = {R.drawable.splash8, R.drawable.splash14, R.drawable.splash15};
+    private int index;
+    private myRunnable runnable = new myRunnable();
+
+    class myRunnable implements Runnable {
+
+        @Override
+        public void run() {
+            index++;
+            index = index % 3;
+            imageView.setImageResource(image[index]);
+            handler.postDelayed(runnable, 2000);//每3秒实现一次的定时器操作
+        }
+    }
+    以下两句在onCreateView中
+    imageView = (ImageView) view.findViewById(R.id.imageview1);
+    handler.postDelayed(runnable, 1000);
+2、轮播器效果，TabFragment11是另一种轮播器的实现过程
+3、webView = (WebView) view1.findViewById(R.id.webview);
+   webView.getSettings().setJavaScriptEnabled(true);//加上这句就代表支持脚本语言，和不加区别很大，可以尝试一下
+   webView.setBackgroundColor(0);                   //设置背景色
+   webView.getBackground().setAlpha(50);            //设置填充透明度 范围：0-255
+   webView.loadUrl("http://www.baidu.com");
+   webView.setWebViewClient(new HelloWebViewClient());
+   webView.setHorizontalScrollBarEnabled(false);    // 水平滚动栏不显示
+   webView.setVerticalScrollBarEnabled(false);      // 垂直滚动栏不显示
+   private class HelloWebViewClient extends WebViewClient {
+
+           @Override
+           public boolean shouldOverrideUrlLoading(WebView view, String url) {
+               view.loadUrl(url);
+               return true;
+           }
+
+           // 开始加载
+           @Override
+           public void onPageStarted(WebView view, String url, Bitmap favicon) {
+               // TODO Auto-generated method stub
+               super.onPageStarted(view, url, favicon);
+           }
+
+           // 加载结束
+           @Override
+           public void onPageFinished(WebView view, String url) {
+               // TODO Auto-generated method stub
+               super.onPageFinished(view, url);
+           }
+       }
