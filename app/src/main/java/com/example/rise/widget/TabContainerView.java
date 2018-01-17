@@ -15,7 +15,7 @@ import com.example.rise.R;
 import com.example.rise.adapter.BaseAdapter;
 import com.example.rise.adapter.TabViewPagerAdapter;
 import com.example.rise.listener.OnTabSelectedListener;
-import com.example.rise.utils.DisplayUtil;
+import com.example.rise.util.DisplayUtil;
 
 /**
  * Created by chengxi on 17/4/26.

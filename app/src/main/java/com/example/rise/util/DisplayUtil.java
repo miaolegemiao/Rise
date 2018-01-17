@@ -1,4 +1,4 @@
-package com.example.rise.utils;
+package com.example.rise.util;
 
 import android.content.Context;
 

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:id="@+id/system_setting"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/avatar"
+    tools:context="com.example.rise.activity.GatewayAddressActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@mipmap/avatar">
+
+        <TextView
+            android:id="@+id/title_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="网关地址设置"
+            android:textColor="#fff"
+            android:textSize="20sp"/>
+
+        <Button
+            android:id="@+id/back_button"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginLeft="10dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:background="@mipmap/back"/>
+
+    </RelativeLayout>
+
+    <EditText
+        android:id="@+id/gatewayaddress"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/shape_radius2"
+        android:paddingLeft="10dp"
+        android:text="http://222.173.103.228:10066/"
+        android:textSize="20sp"
+        android:textColor="#8F8F8F"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="15dp"
+        android:text="注意：服务器地址必须是以'/'结束"
+        android:textSize="16sp"
+        android:textColor="#fff"/>
+
+    <TextView
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:text="例如：http://000.000.000.000:0000/"
+        android:textSize="16sp"
+        android:textColor="#fff"/>
+
+    <Button
+        android:id="@+id/restoredefaults"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/selecter_btn2"
+        android:text="恢复默认值"
+        android:textSize="16sp"
+        android:textColor="#fff"/>
+
+    <Button
+        android:id="@+id/determine"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/selecter_btn2"
+        android:text="确定"
+        android:textSize="16sp"
+        android:textColor="#fff"/>
+
+</LinearLayout>
